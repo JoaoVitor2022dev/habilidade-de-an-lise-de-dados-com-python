@@ -9,15 +9,15 @@ cancap_ouze = pd.read_csv(
     skiprows=4  # ⬅️ Pula as 4 primeiras linhas
 )
 
-print(cancap_ouze2.isnull().sum())
+print(cancap_ouze.isnull().sum())
 
 # cabeçalho de dados 
 # print(cancap_ouze2.head(10))
 
-print(cancap_ouze2['Telefone - Todos os telefones.2'].isnull().sum())
+print(cancap_ouze['Telefone - Todos os telefones.2'].isnull().sum())
 
 # EXCLUIR TODOS OS VALORES MISSING
-cancap_ouze2 = cancap_ouze2.dropna()
+cancap_ouze2 = cancap_ouze.dropna()
 
 print(cancap_ouze2.isnull().sum())
 
