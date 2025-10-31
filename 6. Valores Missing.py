@@ -30,4 +30,5 @@ cancap_ouze2['obitos_novos'].fillna(cancap_ouze2['obitos_novos'].mean(), inplace
 
 # SUBSTITUIR OS VALORES MISSING POR QUALQUER OUTRO VALOR
 cancap_ouze2['obitos_novos'].fillna(cancap_ouze2['obitos_novos'].mean(), inplace=True)
+
 ['obitos_novos'].fillna(10, inplace=True)
